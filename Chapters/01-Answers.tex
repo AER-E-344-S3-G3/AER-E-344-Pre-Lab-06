@@ -2,6 +2,41 @@
 \label{cp:answers}
 \section{Question 1}
 \begin{importantbox}
-    This is the question.
+You should review and understand the fundamental technical basis of thermal-based anemometry techniques.
 \end{importantbox}
-\noindent{}This is the answer.
+
+Thermal anemometers use two thin wire thermometers to measure the flow velocity of a gas. One wire measures the temperature of the fluid as a reference while the other wire is heated using an electrical current. The flow removes heat from the heated wire and causes a cooling effect which increases as the flow increases. The temperatures of the wires are not measured directly, but are calculated using the relationship with resistance.
+
+\section{Question 2}
+\begin{importantbox}
+You should understand the differences between CCA and CTA approaches in using hotwire anemometry system for flow velocity measurements.
+\end{importantbox}
+
+\textbf{CCA} - In constant-current anemometry, the current passing through the heated wire remains constant. The fluid flow fluctuations cause a change in the wire temperature, which can be used to calculate the flow velocity in a first-order differential equation.  
+
+\textbf{CTA} – Constant-temperature anemometry keeps the hot wire the same temperature using an electric feedback system to adjust the voltage going to the hot wire in response to the cooling effect of fluid flow.  
+
+\section{Procedures}
+\begin{importantbox}
+You should review the recorded video of the AER E 344 Pre-lab 06.
+\end{importantbox}
+
+\subsection{Airfoil Wake Measurements}
+
+\begin{enumerate}
+    \item Calibrate the instruments when the wind tunnel is at \qty{0}{\hertz}
+    \item Set the velocity at \qtyrange{10}{15}{\hertz}. Wait for the velocity to settle.  
+    \item Set the angle of attack (AoA) to \qty{-4}{\degree}. \label{it:set_aoa} 
+    \item Move the rake to cover the entire wake of the airfoil as necessary 
+    \item Acquire and save the data (it takes approximately \qty{5}{\second}) \label{it:acquire}
+    \item Repeat \autoref{it:set_aoa} through \autoref{it:acquire} using the following AoAs: \qtylist{0;4;6;8;10;12;16}{\degree}
+\end{enumerate}
+
+\subsection{Hot-Wire Anemometer Calibration} 
+
+\begin{enumerate}
+    \item Get the voltage data when the velocity is \qty{0}{\meter\per\second}
+    \item Set the wind tunnel to \qty{5}{\hertz} and record the data. This includes the voltage data given by the computer and the pressure data from the Mensor manometer. \label{it:set_record}
+    \item Repeat \autoref{it:set_record} over a range of frequencies from \qtyrange{5}{35}{\hertz}, incrementing by \qty{5}{\hertz} each time
+    \item Approximate the data to a 4th-degree function
+\end{enumerate}
